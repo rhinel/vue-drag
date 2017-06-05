@@ -172,8 +172,8 @@ export default {
         let thisMovingCW = this.thisMovingSe.target.clientWidth
         let thisMovingCH = this.thisMovingSe.target.clientHeight
 
-        this.thisMoving.offsetX += e.movementX / 2
-        this.thisMoving.offsetY += e.movementY / 2
+        this.thisMoving.offsetX += e.movementX / window.devicePixelRatio
+        this.thisMoving.offsetY += e.movementY / window.devicePixelRatio
 
         // 计算位移
         let length = this.thisMovingArr.length
